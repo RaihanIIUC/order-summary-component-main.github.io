@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --primary-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --primary-white: hsl(0, 0%, 100%);
+  --background-blue: hsl(217, 54%, 11%);
+  --card-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overview: hidden;
+  background: var(--background-blue);
+}
+
+.container {
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: var(--card-blue);
+}
+
+.token-image {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  border-radius: 1rem;
+  background: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equlibrium-image {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(./images/image-equilibrium.jpg);
+  border-radius: 0.5rem;
+  opacity: 1;
+}
+.middle {
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+}
+.token-image:hover .equlibrium-image {
+  opacity: 0.5;
+}
+.token-image:hover .middle {
+  opacity: 0.5;
+}
